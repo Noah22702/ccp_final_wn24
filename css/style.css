@@ -1,0 +1,147 @@
+* {
+    padding: 16px;
+    margin: 15px;
+}
+
+body {
+    font-family: sans-serif;
+    color: #093145;
+}
+
+.Grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: end;
+    padding: 27px;
+    background-color: Orange; 
+}
+
+.Grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: Orange; 
+}
+
+.skip {
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    width: 2px;
+    height: 2px;
+
+}
+
+.skip:focus {
+    width: auto;
+    height: auto;
+    position: static;
+    overflow: visible;
+}
+
+h1 {
+    justify-content: flex-start;
+    background-color: antiquewhite;
+    text-align: center;
+    font-family: cursive;
+    padding: 0px 0px 24px;
+    font-size: xx-large;
+}
+
+h2 {
+    background-color: antiquewhite;
+    font-size: x-large;
+
+}
+
+h3 {
+    background-color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  justify-content: space-evenly;
+  background: #4B0082;
+  /* color: white; Add another shits for the nav bullet list
+    */
+
+}
+
+/*Makes the navigation bar style */
+nav ul {
+    display : flex;
+    justify-content: center;
+    list-style-type: none; /*Remove the little dot but can change it into something else */
+}
+
+/*These mess with the navigation links style*/
+nav li, a:visited {
+    justify-content: center;
+    padding: 0 ;
+    color: white; 
+}
+
+main li, main ul{
+ padding: 0px 0px 0px 0px;
+ margin: 10px;
+
+}
+
+main p, ul, ol {
+    padding: 10px;
+}
+
+/*Media query Style for different size  devices*/
+@media screen and (min-width:768px){
+    * {
+        padding: 20px;
+    }
+
+    .content {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .Grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: end;
+        padding: 20px;
+        background-color: Orange; 
+    }
+    
+    .Grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: Orange; 
+    }
+
+    
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: #4B0082;
+        /* color: white; Add another shits for the nav bullet list
+          */
+      
+      }
+
+      
+}
+
+
+
